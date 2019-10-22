@@ -1,0 +1,11 @@
+FROM layershop.dangdang.com/cnlab/ng-php-tw-runtime:v1
+
+RUN mkdir -p /var/www/hosts/productapi
+
+COPY ./knative-helloworld-php/* /var/www/hosts/productapi/
+
+EXPOSE 80
+
+STOPSIGNAL SIGQUIT
+
+CMD ["/run.sh"]
