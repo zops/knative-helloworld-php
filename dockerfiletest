@@ -1,4 +1,4 @@
-FROM layershop.dangdang.com/cnlab/ng-php-tw-runtime:v1
+FROM layershop.dangdang.com/cnlab/php-tw-runtime:v1
 
 RUN mkdir -p /var/www/hosts/productapi
 
